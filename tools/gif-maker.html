@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: blob: data: 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=()">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <title>GIF Maker Online – ConvertHUB</title>
   <meta name="description" content="Buat animasi GIF dari video pendek atau rangkaian gambar secara gratis online. Langsung di browser menggunakan ffmpeg.wasm.">
   <link rel="stylesheet" href="../css/style.css">

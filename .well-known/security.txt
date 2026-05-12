@@ -1,0 +1,13 @@
+Contact: https://github.com/danendra9301
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: id, en
+Canonical: https://danendra9301.github.io/.well-known/security.txt
+Policy: https://danendra9301.github.io/
+
+# ConvertHUB Security Policy
+# This is a static, client-side-only website. No user data is collected,
+# stored, or transmitted to any backend server. All file processing happens
+# entirely in the user's browser.
+#
+# If you discover a security vulnerability (e.g. XSS, CSP bypass, library CVE),
+# please report it via the GitHub issues page above.
