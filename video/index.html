@@ -6,58 +6,54 @@
   <title>ConvertHUB – Alat Konversi Video & Audio Online</title>
   <meta name="description" content="Konversi dan kompres video online gratis. MP4 ke MP3, kompresi video, trim video, dan buat GIF — langsung di browser menggunakan ffmpeg.wasm.">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
 </head>
 <body>
 <header>
   <div class="header-inner">
-    <a href="../index.html" class="logo">🔄 Convert<span>HUB</span></a>
-    <button class="menu-toggle" aria-label="Buka menu">
-      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
+    <a href="../index.html" class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 22v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L21 8M3 16l2.64 2.36A9 9 0 0020.49 15"/></svg>
+      Convert<span>HUB</span>
+    </a>
+    <button class="menu-toggle" aria-label="Buka menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     <nav>
-      <a href="../gambar/index.html">🖼️ Gambar</a>
-      <a href="index.html" class="active">🎬 Video</a>
-      <a href="../pdf/index.html">📄 PDF</a>
-      <a href="../lainnya/index.html">⚙️ Lainnya</a>
+      <a href="../gambar/index.html"><i class="fa-solid fa-image"></i> Gambar</a>
+      <a href="index.html" class="active"><i class="fa-solid fa-film"></i> Video</a>
+      <a href="../pdf/index.html"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+      <a href="../lainnya/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Lainnya</a>
     </nav>
   </div>
 </header>
 <main>
   <section class="hero" style="padding:3rem 1.5rem 2.5rem">
-    <div class="hero-badge">🎬 Kategori Video & Audio</div>
+    <div class="hero-badge"><i class="fa-solid fa-film"></i> Kategori Video & Audio</div>
     <h1 style="font-size:clamp(1.75rem,4vw,2.75rem)">Alat Konversi Video & Audio</h1>
     <p>MP4, WebM, MP3 — konversi dan edit video langsung di browser menggunakan teknologi WebAssembly.</p>
   </section>
   <div class="container">
     <div class="alert alert-warning" style="margin:1.5rem 0">
-      ⚠️ <strong>Catatan:</strong> Alat video menggunakan ffmpeg.wasm yang membutuhkan waktu loading awal ~30 detik. Disarankan untuk file video di bawah 50MB.
+      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Catatan:</strong> Alat video menggunakan ffmpeg.wasm yang membutuhkan waktu loading awal ~30 detik. Disarankan untuk file video di bawah 50MB.
     </div>
   </div>
   <section class="section container" style="padding-top:0">
     <div class="tool-grid">
       <a href="../tools/mp4-ke-mp3.html" class="tool-card">
-        <span class="tool-icon">🎵</span>
-        <h4>MP4 ke MP3</h4>
-        <p>Ekstrak audio dari video MP4 menjadi file MP3</p>
+        <div class="tool-icon"><i class="fa-solid fa-music icon-green"></i></div>
+        <h4>MP4 ke MP3</h4><p>Ekstrak audio dari video MP4 menjadi file MP3</p>
         <span class="badge badge-green">ffmpeg.wasm</span>
       </a>
       <a href="../tools/kompresi-video.html" class="tool-card">
-        <span class="tool-icon">📦</span>
-        <h4>Kompresi Video</h4>
-        <p>Perkecil ukuran file video MP4 tanpa kehilangan kualitas</p>
+        <div class="tool-icon"><i class="fa-solid fa-box-archive icon-green"></i></div>
+        <h4>Kompresi Video</h4><p>Perkecil ukuran file video MP4 tanpa kehilangan kualitas</p>
         <span class="badge badge-green">ffmpeg.wasm</span>
       </a>
       <a href="../tools/trim-video.html" class="tool-card">
-        <span class="tool-icon">✂️</span>
-        <h4>Trim Video</h4>
-        <p>Potong video: pilih titik awal dan akhir yang kamu inginkan</p>
+        <div class="tool-icon"><i class="fa-solid fa-scissors icon-green"></i></div>
+        <h4>Trim Video</h4><p>Potong video: pilih titik awal dan akhir yang kamu inginkan</p>
         <span class="badge badge-green">ffmpeg.wasm</span>
       </a>
       <a href="../tools/gif-maker.html" class="tool-card">
-        <span class="tool-icon">🎞️</span>
-        <h4>GIF Maker</h4>
-        <p>Buat animasi GIF dari video pendek atau rangkaian gambar</p>
+        <div class="tool-icon"><i class="fa-solid fa-clapperboard icon-green"></i></div>
+        <h4>GIF Maker</h4><p>Buat animasi GIF dari video pendek atau rangkaian gambar</p>
         <span class="badge badge-green">ffmpeg.wasm</span>
       </a>
     </div>
@@ -66,10 +62,8 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-links">
-      <a href="../gambar/index.html">Gambar</a>
-      <a href="index.html">Video</a>
-      <a href="../pdf/index.html">PDF</a>
-      <a href="../lainnya/index.html">Lainnya</a>
+      <a href="../gambar/index.html">Gambar</a><a href="index.html">Video</a>
+      <a href="../pdf/index.html">PDF</a><a href="../lainnya/index.html">Lainnya</a>
     </div>
     <p>© 2025 ConvertHUB · Privasi terjaga · Semua proses di browser</p>
   </div>

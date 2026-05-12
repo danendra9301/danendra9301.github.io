@@ -16,24 +16,25 @@
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo" aria-label="ConvertHUB Beranda">🔄 Convert<span>HUB</span></a>
+    <a href="index.html" class="logo" aria-label="ConvertHUB Beranda">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 22v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L21 8M3 16l2.64 2.36A9 9 0 0020.49 15"/></svg>
+      Convert<span>HUB</span>
+    </a>
     <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
-      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     <nav aria-label="Navigasi utama">
-      <a href="gambar/index.html">🖼️ Gambar</a>
-      <a href="video/index.html">🎬 Video</a>
-      <a href="pdf/index.html">📄 PDF</a>
-      <a href="lainnya/index.html">⚙️ Lainnya</a>
+      <a href="gambar/index.html"><i class="fa-solid fa-image"></i> Gambar</a>
+      <a href="video/index.html"><i class="fa-solid fa-film"></i> Video</a>
+      <a href="pdf/index.html"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+      <a href="lainnya/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Lainnya</a>
     </nav>
   </div>
 </header>
 
 <main>
   <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-badge">✨ 100% Gratis · Tanpa Install · Privasi Terjaga</div>
+    <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> 100% Gratis · Tanpa Install · Privasi Terjaga</div>
     <h1 id="hero-heading">Konversi File Apa Saja,<br>Langsung di Browser</h1>
     <p>Ubah gambar, video, audio, dan PDF tanpa upload ke server. Semua proses terjadi di perangkatmu — cepat, aman, dan gratis.</p>
   </section>
@@ -42,109 +43,96 @@
     <h2 class="section-title" id="cat-heading">Pilih Kategori</h2>
     <p class="section-sub">Semua alat tersedia gratis, langsung di browser tanpa perlu akun.</p>
     <div class="cat-grid">
-      <a href="gambar/index.html" class="cat-card" aria-label="Alat konversi gambar">
-        <span class="cat-icon" aria-hidden="true">🖼️</span>
+      <a href="gambar/index.html" class="cat-card">
+        <div class="cat-icon"><i class="fa-solid fa-image icon-blue"></i></div>
         <h3>Konversi Gambar</h3>
         <p>JPG→PNG, WebP, Kompresi, Resize, Crop, Favicon</p>
       </a>
-      <a href="video/index.html" class="cat-card" aria-label="Alat konversi video dan audio">
-        <span class="cat-icon" aria-hidden="true">🎬</span>
+      <a href="video/index.html" class="cat-card">
+        <div class="cat-icon"><i class="fa-solid fa-film icon-green"></i></div>
         <h3>Video & Audio</h3>
         <p>MP4→MP3, Kompresi Video, Trim, GIF Maker</p>
       </a>
-      <a href="pdf/index.html" class="cat-card" aria-label="Alat konversi PDF">
-        <span class="cat-icon" aria-hidden="true">📄</span>
+      <a href="pdf/index.html" class="cat-card">
+        <div class="cat-icon"><i class="fa-solid fa-file-pdf icon-purple"></i></div>
         <h3>Alat PDF</h3>
         <p>PDF→Gambar, Gambar→PDF</p>
       </a>
-      <a href="lainnya/index.html" class="cat-card" aria-label="Alat lainnya">
-        <span class="cat-icon" aria-hidden="true">⚙️</span>
+      <a href="lainnya/index.html" class="cat-card">
+        <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench icon-orange"></i></div>
         <h3>Lainnya</h3>
         <p>QR Generator, Favicon Generator</p>
       </a>
     </div>
   </section>
 
-  <section class="section container" aria-labelledby="tools-heading" style="padding-top:0">
+  <section class="section container" style="padding-top:0" aria-labelledby="tools-heading">
     <h2 class="section-title" id="tools-heading">Semua Alat</h2>
     <p class="section-sub">13 alat konversi tersedia — semuanya gratis dan berjalan di browser.</p>
     <div class="tool-grid">
       <a href="tools/jpg-ke-png.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🔄</span>
-        <h4>JPG ke PNG</h4>
-        <p>Konversi foto JPG ke format PNG transparan</p>
+        <div class="tool-icon"><i class="fa-solid fa-arrows-rotate icon-blue"></i></div>
+        <h4>JPG ke PNG</h4><p>Konversi foto JPG ke format PNG transparan</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/png-ke-webp.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🔄</span>
-        <h4>PNG ke WebP</h4>
-        <p>Kompres ke format WebP modern</p>
+        <div class="tool-icon"><i class="fa-solid fa-arrows-rotate icon-blue"></i></div>
+        <h4>PNG ke WebP</h4><p>Kompres ke format WebP modern</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/kompresi-gambar.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🗜️</span>
-        <h4>Kompresi Gambar</h4>
-        <p>Kurangi ukuran file tanpa kehilangan kualitas</p>
+        <div class="tool-icon"><i class="fa-solid fa-compress icon-blue"></i></div>
+        <h4>Kompresi Gambar</h4><p>Kurangi ukuran file tanpa kehilangan kualitas</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/resize-gambar.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">📐</span>
-        <h4>Resize Gambar</h4>
-        <p>Ubah dimensi gambar sesuai kebutuhan</p>
+        <div class="tool-icon"><i class="fa-solid fa-expand icon-blue"></i></div>
+        <h4>Resize Gambar</h4><p>Ubah dimensi gambar sesuai kebutuhan</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/crop-gambar.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">✂️</span>
-        <h4>Crop Gambar</h4>
-        <p>Potong gambar dengan presisi</p>
+        <div class="tool-icon"><i class="fa-solid fa-crop-simple icon-blue"></i></div>
+        <h4>Crop Gambar</h4><p>Potong gambar dengan presisi</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/favicon-generator.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">⭐</span>
-        <h4>Favicon Generator</h4>
-        <p>Buat favicon 48×48 dari gambar apapun</p>
+        <div class="tool-icon"><i class="fa-solid fa-star icon-blue"></i></div>
+        <h4>Favicon Generator</h4><p>Buat favicon 48×48 dari gambar apapun</p>
         <span class="badge badge-blue">Gambar</span>
       </a>
       <a href="tools/mp4-ke-mp3.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🎵</span>
-        <h4>MP4 ke MP3</h4>
-        <p>Ekstrak audio dari video MP4</p>
+        <div class="tool-icon"><i class="fa-solid fa-music icon-green"></i></div>
+        <h4>MP4 ke MP3</h4><p>Ekstrak audio dari video MP4</p>
         <span class="badge badge-green">Video</span>
       </a>
       <a href="tools/kompresi-video.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">📦</span>
-        <h4>Kompresi Video</h4>
-        <p>Perkecil ukuran file video</p>
+        <div class="tool-icon"><i class="fa-solid fa-box-archive icon-green"></i></div>
+        <h4>Kompresi Video</h4><p>Perkecil ukuran file video</p>
         <span class="badge badge-green">Video</span>
       </a>
       <a href="tools/trim-video.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">✂️</span>
-        <h4>Trim Video</h4>
-        <p>Potong bagian video yang kamu inginkan</p>
+        <div class="tool-icon"><i class="fa-solid fa-scissors icon-green"></i></div>
+        <h4>Trim Video</h4><p>Potong bagian video yang kamu inginkan</p>
         <span class="badge badge-green">Video</span>
       </a>
       <a href="tools/gif-maker.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🎞️</span>
-        <h4>GIF Maker</h4>
-        <p>Buat GIF dari video atau rangkaian gambar</p>
+        <div class="tool-icon"><i class="fa-solid fa-clapperboard icon-green"></i></div>
+        <h4>GIF Maker</h4><p>Buat GIF dari video atau rangkaian gambar</p>
         <span class="badge badge-green">Video</span>
       </a>
       <a href="tools/pdf-ke-gambar.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">🖼️</span>
-        <h4>PDF ke Gambar</h4>
-        <p>Ekspor halaman PDF sebagai PNG</p>
+        <div class="tool-icon"><i class="fa-solid fa-file-image icon-purple"></i></div>
+        <h4>PDF ke Gambar</h4><p>Ekspor halaman PDF sebagai PNG</p>
         <span class="badge badge-purple">PDF</span>
       </a>
       <a href="tools/gambar-ke-pdf.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">📄</span>
-        <h4>Gambar ke PDF</h4>
-        <p>Gabungkan JPG/PNG menjadi satu PDF</p>
+        <div class="tool-icon"><i class="fa-solid fa-file-pdf icon-purple"></i></div>
+        <h4>Gambar ke PDF</h4><p>Gabungkan JPG/PNG menjadi satu PDF</p>
         <span class="badge badge-purple">PDF</span>
       </a>
       <a href="tools/qr-generator.html" class="tool-card">
-        <span class="tool-icon" aria-hidden="true">📱</span>
-        <h4>QR Generator</h4>
-        <p>Buat QR Code dari teks atau URL</p>
+        <div class="tool-icon"><i class="fa-solid fa-qrcode icon-orange"></i></div>
+        <h4>QR Generator</h4><p>Buat QR Code dari teks atau URL</p>
         <span class="badge badge-orange">Lainnya</span>
       </a>
     </div>
@@ -153,22 +141,22 @@
   <section class="section" style="background:white;border-top:1px solid var(--border)">
     <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;text-align:center">
       <div>
-        <div style="font-size:2rem;margin-bottom:.5rem">🔒</div>
+        <div style="font-size:2rem;margin-bottom:.5rem;color:#2563eb"><i class="fa-solid fa-shield-halved"></i></div>
         <h3 style="font-size:1rem;margin-bottom:.3rem">Privasi 100%</h3>
         <p style="font-size:.85rem;color:var(--text-muted)">File tidak pernah dikirim ke server. Semua proses di browsermu.</p>
       </div>
       <div>
-        <div style="font-size:2rem;margin-bottom:.5rem">⚡</div>
+        <div style="font-size:2rem;margin-bottom:.5rem;color:#ea580c"><i class="fa-solid fa-bolt"></i></div>
         <h3 style="font-size:1rem;margin-bottom:.3rem">Super Cepat</h3>
         <p style="font-size:.85rem;color:var(--text-muted)">Konversi instan menggunakan WebAssembly dan Canvas API.</p>
       </div>
       <div>
-        <div style="font-size:2rem;margin-bottom:.5rem">💸</div>
+        <div style="font-size:2rem;margin-bottom:.5rem;color:#16a34a"><i class="fa-solid fa-tag"></i></div>
         <h3 style="font-size:1rem;margin-bottom:.3rem">Gratis Selamanya</h3>
         <p style="font-size:.85rem;color:var(--text-muted)">Tidak perlu daftar, tidak perlu bayar. Langsung pakai.</p>
       </div>
       <div>
-        <div style="font-size:2rem;margin-bottom:.5rem">📱</div>
+        <div style="font-size:2rem;margin-bottom:.5rem;color:#7c3aed"><i class="fa-solid fa-mobile-screen"></i></div>
         <h3 style="font-size:1rem;margin-bottom:.3rem">Responsif</h3>
         <p style="font-size:.85rem;color:var(--text-muted)">Bekerja sempurna di desktop, tablet, maupun smartphone.</p>
       </div>

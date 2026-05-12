@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
 :root {
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
@@ -74,7 +76,11 @@ nav a {
   font-weight: 500;
   color: var(--text-muted);
   transition: background .15s, color .15s;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
 }
+nav a i { font-size: .85rem; }
 
 nav a:hover, nav a.active {
   background: #eff6ff;
@@ -171,9 +177,17 @@ main { flex: 1; }
 }
 
 .cat-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+}
+.cat-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px; height: 68px;
+  border-radius: 18px;
+  font-size: 1.75rem;
 }
 
 .cat-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .35rem; }
@@ -207,9 +221,22 @@ main { flex: 1; }
   text-decoration: none;
 }
 
-.tool-icon { font-size: 1.75rem; }
+.tool-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
 .tool-card h4 { font-size: .95rem; font-weight: 600; }
 .tool-card p { font-size: .8rem; color: var(--text-muted); }
+
+/* Icon color variants */
+.icon-blue   { background: #dbeafe; color: #2563eb; }
+.icon-green  { background: #dcfce7; color: #16a34a; }
+.icon-purple { background: #f3e8ff; color: #7c3aed; }
+.icon-orange { background: #ffedd5; color: #ea580c; }
 
 .badge {
   font-size: .7rem;
@@ -225,6 +252,18 @@ main { flex: 1; }
 
 /* ── Tool Page Layout ── */
 .tool-page { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.t-icon {
+  display: flex;
+  margin-bottom: .75rem;
+}
+.t-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px; height: 68px;
+  border-radius: 18px;
+  font-size: 1.75rem;
+}
 
 .breadcrumb {
   display: flex;
