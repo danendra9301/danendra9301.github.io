@@ -84,6 +84,7 @@ function setProgress(id, pct, label) {
 window.CH = { formatSize, formatTime, downloadBlob, setProgress };
 
 // ── Visitor counter (counterapi.dev — gratis, no signup) ──
+// Defer to idle so it doesn't compete with critical render path
 (function visitorCounter() {
   function init() {
     const footer = document.querySelector('footer .footer-inner');
@@ -121,6 +122,11 @@ window.CH = { formatSize, formatTime, downloadBlob, setProgress };
         if (el) el.textContent = '—';
       });
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  // Defer to after page load + idle callback to keep critical path clean
+  function deferred() {
+    if ('requestIdleCallback' in window) requestIdleCallback(init, { timeout: 3000 });
+    else setTimeout(init, 1500);
+  }
+  if (document.readyState === 'complete') deferred();
+  else window.addEventListener('load', deferred, { once: true });
 })();

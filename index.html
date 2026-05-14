@@ -15,6 +15,14 @@
   <meta property="og:description" content="Konversi gambar, video, audio, dan PDF langsung di browser. Gratis, cepat, tanpa install.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Performance: preconnect CDNs -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <!-- Font Awesome (non-blocking) -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6762425743604699" crossorigin="anonymous"></script>
   <!-- Google Analytics (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18SPRHVYGN"></script>
@@ -205,6 +213,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script defer src="js/main.js"></script>
 </body>
 </html>
