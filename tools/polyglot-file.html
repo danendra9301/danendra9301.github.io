@@ -22,10 +22,10 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
   <style>
     .info-box { background: linear-gradient(135deg, #fef3c7, #fed7aa); border-left: 4px solid #f59e0b; padding: 1rem 1.25rem; border-radius: 8px; margin: 1rem 0; }
-    .info-box h3 { font-size: .95rem; margin-bottom: .4rem; color: #92400e; display: flex; align-items: center; gap: .5rem; }
+    .info-box h2 { font-size: .95rem; margin-bottom: .4rem; color: #92400e; display: flex; align-items: center; gap: .5rem; }
     .info-box p { font-size: .85rem; color: #78350f; line-height: 1.55; margin: 0; }
     .step-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin: 1rem 0; }
-    .step-box h3 { font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; }
+    .step-box h2 { font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; }
     .step-box .step-num { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: white; font-size: .8rem; font-weight: 800; }
     .step-box .step-desc { font-size: .82rem; color: var(--text-muted); margin-bottom: .85rem; }
     .file-pick { display: flex; align-items: center; gap: .75rem; padding: .75rem 1rem; background: var(--bg); border: 1.5px dashed var(--border); border-radius: 10px; cursor: pointer; transition: border-color .15s; }
@@ -45,12 +45,12 @@
     .preview-wrap img { max-width: 100%; max-height: 200px; border-radius: 4px; }
     .preview-wrap canvas { max-width: 100%; max-height: 200px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
     .result-card-special { background: linear-gradient(135deg, #1e40af, #7c3aed); color: white; padding: 1.5rem; border-radius: var(--radius); margin: 1rem 0; }
-    .result-card-special h3 { font-size: 1.1rem; margin-bottom: .35rem; display: flex; align-items: center; gap: .5rem; }
+    .result-card-special h2 { font-size: 1.1rem; margin-bottom: .35rem; display: flex; align-items: center; gap: .5rem; }
     .result-card-special .filename-display { font-family: monospace; font-size: .95rem; background: rgba(0,0,0,.25); padding: .5rem .75rem; border-radius: 8px; margin: .75rem 0; word-break: break-all; }
     .result-card-special .btn { background: white; color: #1e40af; border: none; }
     .result-card-special .btn:hover { background: #f0f0f0; }
     .usage-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin: 1rem 0; }
-    .usage-box h3 { font-size: .95rem; margin-bottom: .85rem; }
+    .usage-box h2 { font-size: .95rem; margin-bottom: .85rem; }
     .rename-example { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center; padding: .75rem 1rem; background: var(--bg); border-radius: 8px; margin-bottom: .65rem; font-size: .85rem; }
     .rename-example code { font-family: monospace; font-weight: 700; color: var(--primary); background: rgba(37,99,235,.1); padding: .15rem .4rem; border-radius: 4px; }
     .rename-example .arrow { color: var(--text-muted); }
@@ -89,13 +89,13 @@
     </div>
 
     <div class="info-box">
-      <h3><i class="fa-solid fa-lightbulb"></i> Apa itu Polyglot File?</h3>
+      <h2><i class="fa-solid fa-lightbulb"></i> Apa itu Polyglot File?</h2>
       <p>Polyglot file adalah satu berkas tunggal yang valid dalam lebih dari satu format sekaligus. Contoh: file yang sama bisa dibuka sebagai gambar PNG <strong>dan</strong> diekstrak sebagai arsip ZIP — tergantung ekstensi yang dipakai saat membukanya.</p>
     </div>
 
     <!-- STEP 1: Wrapper -->
     <div class="step-box">
-      <h3><span class="step-num">1</span> File "Wajah Depan" (Wrapper)</h3>
+      <h2><span class="step-num">1</span> File "Wajah Depan" (Wrapper)</h2>
       <p class="step-desc">Format ini yang akan terlihat saat file dibuka biasa. Dukungan: <strong>PNG, JPG, GIF, BMP, WebP, PDF</strong>.</p>
       <label class="file-pick" id="wrapperPick">
         <input type="file" id="wrapperInput" accept="image/jpeg,image/png,image/gif,image/bmp,image/webp,application/pdf">
@@ -111,7 +111,7 @@
 
     <!-- STEP 2: Hidden files -->
     <div class="step-box">
-      <h3><span class="step-num">2</span> File yang Disembunyikan (di dalam ZIP)</h3>
+      <h2><span class="step-num">2</span> File yang Disembunyikan (di dalam ZIP)</h2>
       <p class="step-desc">File-file ini akan tersembunyi di dalam polyglot, dan bisa diekstrak kalau file di-rename jadi <code>.zip</code>. Boleh upload banyak file.</p>
       <label class="file-pick" id="hiddenPick">
         <input type="file" id="hiddenInput" multiple>
@@ -132,7 +132,7 @@
 
     <!-- RESULT -->
     <div id="resultCard" class="result-card-special" style="display:none">
-      <h3><i class="fa-solid fa-circle-check"></i> Polyglot Berhasil Dibuat!</h3>
+      <h2><i class="fa-solid fa-circle-check"></i> Polyglot Berhasil Dibuat!</h2>
       <p style="font-size:.88rem;opacity:.95;margin-bottom:.25rem">Nama file (tanpa ekstensi):</p>
       <div class="filename-display" id="resultFname">polyglot_file</div>
       <p style="font-size:.85rem;opacity:.9" id="resultMeta"></p>
@@ -144,7 +144,7 @@
 
     <!-- USAGE -->
     <div id="usageBox" class="usage-box" style="display:none">
-      <h3><i class="fa-solid fa-circle-question"></i> Cara Pakai File Polyglot</h3>
+      <h2><i class="fa-solid fa-circle-question"></i> Cara Pakai File Polyglot</h2>
       <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:.85rem">File yang kamu download <strong>tidak punya ekstensi</strong>. Rename file untuk membukanya dalam format berbeda:</p>
       <div id="renameExamples"></div>
       <div style="margin-top:1rem;padding:.75rem;background:#fef3c7;border-radius:8px;font-size:.8rem;color:#78350f">
