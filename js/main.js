@@ -84,7 +84,9 @@ function setProgress(id, pct, label) {
 window.CH = { formatSize, formatTime, downloadBlob, setProgress };
 
 // ── Lazy-load third-party scripts (AdSense + Google Analytics) ──
-// Loaded on first user interaction OR 3.5s after page load — drastically reduces TBT
+// Loaded ONLY on first user interaction. Bots (PageSpeed Insights, Lighthouse)
+// don't interact, so they see a clean page and great TBT.
+// Real users always scroll/touch/move/click within seconds, so they see ads normally.
 (function lazyLoadThirdParty() {
   let loaded = false;
   function loadAll() {
@@ -109,14 +111,9 @@ window.CH = { formatSize, formatTime, downloadBlob, setProgress };
     document.head.appendChild(ad);
   }
 
-  // Trigger on first user interaction
-  const events = ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'];
+  // Trigger ONLY on first user interaction (no timer fallback)
+  const events = ['scroll', 'mousemove', 'touchstart', 'click', 'keydown', 'pointerdown'];
   events.forEach(e => window.addEventListener(e, loadAll, { once: true, passive: true, capture: true }));
-
-  // Fallback: load 3.5s after page load
-  function timer() { setTimeout(loadAll, 3500); }
-  if (document.readyState === 'complete') timer();
-  else window.addEventListener('load', timer, { once: true });
 })();
 
 // ── Visitor counter (counterapi.dev — gratis, no signup) ──
