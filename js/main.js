@@ -83,6 +83,42 @@ function setProgress(id, pct, label) {
 // Expose helpers globally
 window.CH = { formatSize, formatTime, downloadBlob, setProgress };
 
+// ── Lazy-load third-party scripts (AdSense + Google Analytics) ──
+// Loaded on first user interaction OR 3.5s after page load — drastically reduces TBT
+(function lazyLoadThirdParty() {
+  let loaded = false;
+  function loadAll() {
+    if (loaded) return;
+    loaded = true;
+
+    // Google Analytics 4
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-18SPRHVYGN');
+    const ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-18SPRHVYGN';
+    document.head.appendChild(ga);
+
+    // Google AdSense
+    const ad = document.createElement('script');
+    ad.async = true;
+    ad.crossOrigin = 'anonymous';
+    ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6762425743604699';
+    document.head.appendChild(ad);
+  }
+
+  // Trigger on first user interaction
+  const events = ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'];
+  events.forEach(e => window.addEventListener(e, loadAll, { once: true, passive: true, capture: true }));
+
+  // Fallback: load 3.5s after page load
+  function timer() { setTimeout(loadAll, 3500); }
+  if (document.readyState === 'complete') timer();
+  else window.addEventListener('load', timer, { once: true });
+})();
+
 // ── Visitor counter (counterapi.dev — gratis, no signup) ──
 // Defer to idle so it doesn't compete with critical render path
 (function visitorCounter() {
