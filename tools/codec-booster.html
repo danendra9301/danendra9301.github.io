@@ -82,7 +82,7 @@
       <input type="file" id="fileInput" accept="video/mp4,.mp4" aria-label="Pilih file MP4">
       <div class="dz-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></div>
       <strong>Seret file MP4 ke sini</strong>
-      <p>MP4 · Maks. 200MB · Rekomendasi 1080p</p>
+      <p>MP4 · Maks. 3.5 GB · Rekomendasi 1080p</p>
     </div>
 
     <div id="alertBox"></div>
@@ -195,8 +195,16 @@ function loadFile(file) {
   if (!file || !file.type.match('video/mp4')) {
     alertBox.innerHTML = '<div class="alert alert-error">⚠️ Harap unggah file MP4.</div>'; return;
   }
-  if (file.size > 200 * 1024 * 1024) {
-    alertBox.innerHTML = '<div class="alert alert-error">⚠️ File terlalu besar. Maks. 200MB.</div>'; return;
+  // 3.5GB hard cap. Browser WebAssembly/ffmpeg.wasm has memory limits — warn the user.
+  const MAX_SIZE = 3.5 * 1024 * 1024 * 1024; // 3.5 GB
+  if (file.size > MAX_SIZE) {
+    alertBox.innerHTML = '<div class="alert alert-error">⚠️ File melebihi batas 3.5 GB. Trim dulu video kamu.</div>'; return;
+  }
+  // Soft warnings for risky sizes
+  if (file.size > 2 * 1024 * 1024 * 1024) {
+    alertBox.innerHTML = '<div class="alert alert-warning">⚠️ <strong>Warning:</strong> File >2GB. Browser ffmpeg.wasm hanya punya memori 2-4GB. Proses kemungkinan besar gagal/crash. Disarankan trim video dulu ke <1.5GB.</div>';
+  } else if (file.size > 1024 * 1024 * 1024) {
+    alertBox.innerHTML = '<div class="alert alert-warning">⚠️ <strong>File besar (>1GB):</strong> Proses akan lambat (10-30 menit) dan memakan banyak RAM. Tutup tab lain & jangan switch tab selama proses.</div>';
   }
   currentFile = file;
   videoPreview.src = URL.createObjectURL(file);
