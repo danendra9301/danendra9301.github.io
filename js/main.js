@@ -195,6 +195,15 @@ CH.theme = {
 [data-theme="dark"] .download-card{background:#0a3a1a;border-color:#166534}
 [data-theme="dark"] .ecc-btn,[data-theme="dark"] .preset-chip,[data-theme="dark"] .fmt-chip,[data-theme="dark"] .lang-chip,[data-theme="dark"] .mode-card{background:#0f172a;color:#f1f5f9;border-color:#334155}
 [data-theme="dark"] .ecc-btn.active,[data-theme="dark"] .preset-chip.active,[data-theme="dark"] .fmt-chip.selected,[data-theme="dark"] .mode-card.selected{background:#2563eb;color:white}
+/* Fix inline background:white on the homepage features section */
+[data-theme="dark"] section[style*="background:white"]{background:#1e293b !important;border-color:#334155 !important}
+[data-theme="dark"] section[style*="background:white"] h3{color:#f1f5f9}
+[data-theme="dark"] section[style*="background:white"] p{color:#94a3b8}
+[data-theme="dark"] section[style*="background:white"] div[style*="color:#2563eb"]{color:#60a5fa !important}
+[data-theme="dark"] section[style*="background:white"] div[style*="color:#ea580c"]{color:#fdba74 !important}
+[data-theme="dark"] section[style*="background:white"] div[style*="color:#16a34a"]{color:#4ade80 !important}
+[data-theme="dark"] section[style*="background:white"] div[style*="color:#7c3aed"]{color:#c4b5fd !important}
+[data-theme="dark"] .hero-badge{background:rgba(15,23,42,.85);color:#60a5fa;border-color:rgba(96,165,250,.4)}
 `;
     document.head.appendChild(s);
   },
