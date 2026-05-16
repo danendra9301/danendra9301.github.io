@@ -161,6 +161,31 @@
       </div>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Polyglot file adalah satu berkas yang valid dalam lebih dari satu format sekaligus. Contoh klasik: file yang sama bisa dibuka sebagai gambar PNG dan diekstrak sebagai arsip ZIP - tergantung ekstensi yang dipakai. Konsep ini berasal dari dunia CTF (Capture The Flag) keamanan siber, eksperimen format file, dan steganografi (menyembunyikan data di file lain).</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload file wrapper (PNG/JPG/GIF/BMP/WebP/PDF) sebagai wajah depan, upload satu atau banyak file yang ingin disembunyikan, klik Buat Polyglot. Tool menggabungkan dengan teknik: wrapper bytes diikuti ZIP bytes. Image viewer baca sampai end marker. ZIP parser scan dari akhir.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Eksperimen format file untuk pembelajaran computer science</li>
+    <li>Tantangan CTF (Capture The Flag) atau steganografi</li>
+    <li>Demonstrasi konsep polyglot di workshop keamanan</li>
+    <li>Backup data tersembunyi yang terlihat seperti foto biasa</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah ini legal?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Membuat polyglot file 100% legal dan teknik well-known. Penggunaan untuk menyembunyikan malware tentu ilegal - tapi tool ini hanya menggabungkan file yang Anda miliki.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Browser bisa buka polyglot file?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Browser akan trust ekstensi file. Jadi file.png dibuka sebagai image, rename ke .zip akan diekstrak. Cara browser membuka sama dengan file biasa.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah aman?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tool ini tidak mengubah konten file Anda - hanya menggabungkan. Aman selama file sumber tidak mengandung malware.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Format polyglot lain selain ZIP?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">PNG+ZIP/JPG+ZIP/PDF+ZIP adalah yang paling reliable. Kombinasi lain (seperti JPG+PDF) lebih kompleks dan butuh teknik khusus.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

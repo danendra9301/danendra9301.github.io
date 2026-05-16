@@ -94,6 +94,31 @@
       <div class="page-grid" id="pageGrid"></div>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Konversi PDF ke gambar berarti merubah setiap halaman PDF menjadi file gambar terpisah (biasanya PNG). Berguna untuk preview PDF tanpa software, sharing satu halaman tertentu, atau ekstraksi konten visual dari dokumen. Tool ini menggunakan PDF.js dari Mozilla untuk rendering berkualitas tinggi langsung di browser.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload PDF, tool akan render setiap halaman ke canvas dengan resolusi 2x untuk kualitas tajam. Preview semua halaman, lalu download individual atau bulk ZIP.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Membuat thumbnail preview untuk dokumen presentasi</li>
+    <li>Sharing satu halaman tertentu via WhatsApp tanpa attach PDF</li>
+    <li>Ekstraksi diagram/grafik dari paper akademik</li>
+    <li>Konversi e-book/komik PDF ke gambar untuk dibaca di galeri foto</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Resolusi gambar hasilnya berapa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Default 2x scale (sekitar 300 DPI). Cocok untuk display dan print kualitas sedang.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">PDF terenkripsi bisa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tidak. PDF dengan password atau DRM tidak bisa di-render. Decrypt dulu pakai tool lain.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa simpan sebagai PDF terpisah per halaman?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Saat ini output PNG. Untuk split PDF jadi PDF lebih kecil, butuh tool berbeda.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Maksimal halaman berapa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Direkomendasikan 1-50 halaman. Lebih banyak akan lambat dan butuh banyak memori.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

@@ -116,6 +116,31 @@
       <button class="btn btn-outline" id="resetBtn" style="display:none">🔄 Resize Lagi</button>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Resize gambar adalah proses mengubah dimensi (lebar x tinggi) gambar. Tool ini memungkinkan kamu mengubah ukuran gambar dengan menjaga aspect ratio (proporsi) atau mengubah secara bebas. Berguna untuk menyesuaikan gambar dengan template, foto profil dengan ukuran spesifik, atau optimasi gambar untuk berbagai platform sosial media.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload gambar, masukkan dimensi target dalam piksel (width dan height), centang Lock Ratio untuk menjaga proporsi, lalu klik resize. Tool akan menggunakan algoritma bilinear/bicubic browser untuk hasil yang halus.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Membuat thumbnail blog atau artikel</li>
+    <li>Resize foto profil sesuai requirement platform (Instagram 1080px, Twitter 400px)</li>
+    <li>Menyiapkan gambar untuk presentasi atau dokumen</li>
+    <li>Membuat hero image dengan dimensi spesifik untuk website</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah aspect ratio akan terjaga?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Jika opsi Lock Ratio aktif, tinggi/lebar akan otomatis menyesuaikan saat satu nilai diubah. Matikan untuk resize bebas (gambar bisa stretched).</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa upscale gambar kecil jadi besar?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Bisa, tapi hasilnya akan blur karena resize naik tidak menambah detail baru. Untuk upscale berkualitas, butuh AI upscaler khusus.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Format output apa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Sama dengan input. JPG tetap JPG, PNG tetap PNG. Untuk ubah format, gunakan tool konversi terpisah.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Maksimal ukuran berapa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tergantung memori browser. File hingga 50MB biasanya aman. Untuk yang lebih besar, kompres dulu sebelum resize.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

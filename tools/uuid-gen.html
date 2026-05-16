@@ -39,6 +39,31 @@
 </div>
 <div class="btn-row"><button class="btn btn-primary" id="genBtn"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Generate</button><button class="btn btn-outline" id="copyBtn"><i class="fa-solid fa-copy" aria-hidden="true"></i> Salin Semua</button><button class="btn btn-outline" id="dlBtn"><i class="fa-solid fa-download" aria-hidden="true"></i> Unduh .txt</button></div>
 <div id="out" aria-live="polite"></div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">UUID (Universally Unique Identifier) adalah ID acak 128-bit yang praktis tidak akan duplikat - bahkan jika digenerate trilyunan kali per detik. Standar untuk database primary key (terutama distributed system), session ID, file naming, dan tracking. Tool ini support UUID v4 (random standard), NanoID (URL-safe pendek), ULID (sortable by time), dan Hex (custom length).</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Pilih tipe (UUID v4 paling umum), set jumlah (1-1000 untuk bulk), pilih format case (lower/upper/no-dash). Tool generate menggunakan crypto.getRandomValues. Copy semua atau download .txt.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Generate primary key database (PostgreSQL UUID column)</li>
+    <li>Create session token untuk aplikasi web</li>
+    <li>Unique filename untuk upload (avoid collision)</li>
+    <li>Bulk generate ID untuk testing/seeding</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bedanya UUID v4 vs ULID?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">v4 random 100% (no order), ULID di-prefix dengan timestamp (sortable by creation time, masih unique). ULID lebih efisien untuk DB indexing.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah benar-benar unik?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Probability collision UUID v4: 1 dalam 2.71 quintillion (untuk 1 milyar ID). Praktis sama dengan aman dari duplikat.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">NanoID untuk apa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">URL-friendly short ID. Default 21 karakter (sama uniqueness dengan UUID). Cocok untuk slug/short link.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa custom prefix?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Saat ini standar. Untuk custom format (misal usr_xxxx), gunakan post-processing manual.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </div></main>
 <footer><div class="footer-inner"><div class="footer-links"><a href="../gambar/index.html">Gambar</a><a href="../video/index.html">Video</a><a href="../pdf/index.html">PDF</a><a href="../lainnya/index.html">Lainnya</a></div><p>© 2025 ConvertHUB · Privasi terjaga · Semua proses di browser</p></div></footer>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>

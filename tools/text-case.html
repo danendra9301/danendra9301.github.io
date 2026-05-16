@@ -29,6 +29,31 @@
 <label for="outp">Output (otomatis ter-update)</label>
 <textarea id="outp" readonly></textarea>
 <button class="btn btn-outline" id="copyBtn" style="margin-top:.85rem"><i class="fa-solid fa-copy" aria-hidden="true"></i> Salin Output</button>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Programming dan writing punya banyak convention nama: camelCase (JavaScript), snake_case (Python), PascalCase (C# classes), kebab-case (HTML attributes), CONSTANT_CASE (env vars). Tool ini konversi teks ke 14 jenis case berbeda dalam 1 klik. Saat klik tombol case, hasilnya otomatis di-copy ke clipboard.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Ketik teks di input, lihat 14 case options di grid, klik salah satu untuk konversi instant dan auto-copy. Output juga muncul di textarea kedua untuk preview manual.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Konversi nama variabel antara bahasa programming berbeda</li>
+    <li>Generate URL slug dari title artikel (kebab-case)</li>
+    <li>Membuat CONSTANT untuk environment variable</li>
+    <li>Reformat tulisan dari ALL CAPS jadi Title Case</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bedanya camelCase vs PascalCase?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Sama-sama tanpa separator. camelCase huruf pertama kecil (helloWorld). PascalCase huruf pertama besar (HelloWorld). Convention: camelCase untuk variable, PascalCase untuk class.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Sentence case vs Title Case?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Sentence: Hello world. (hanya huruf pertama kalimat). Title: Hello World (setiap kata).</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa custom separator?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tool support: dot.case, kebab-case, snake_case, dot.case, Path/Case. Untuk separator lain, copy hasil snake_case lalu replace.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa undo/reverse?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tombol esreveR membalik teks. Untuk undo case conversion, copy input asli lagi.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </div></main>
 <footer><div class="footer-inner"><div class="footer-links"><a href="../gambar/index.html">Gambar</a><a href="../video/index.html">Video</a><a href="../pdf/index.html">PDF</a><a href="../lainnya/index.html">Lainnya</a></div><p>© 2025 ConvertHUB · Privasi terjaga · Semua proses di browser</p></div></footer>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>

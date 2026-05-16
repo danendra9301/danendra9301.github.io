@@ -40,6 +40,31 @@
   <span>Depth: <strong id="sDepth">—</strong></span>
   <span>Size: <strong id="sSize">—</strong></span>
 </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">JSON (JavaScript Object Notation) adalah format pertukaran data paling populer di web - dipakai oleh REST API, config file, database NoSQL, dan banyak lagi. Tool ini menerima JSON mentah lalu format dengan indentasi yang rapi (beautify) atau hilangkan whitespace (minify). Sekaligus validasi syntax dan tampilkan statistik (jumlah keys, arrays, kedalaman nesting).</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Paste JSON di kolom kiri, pilih indent (2 spasi/4 spasi/tab), klik Format atau Minify. Output di kolom kanan dengan statistik. Jika JSON invalid, error message akan menunjukkan posisi masalah.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Debug response API yang dikirim minified</li>
+    <li>Membuat JSON config yang rapi untuk file settings</li>
+    <li>Validasi JSON sebelum di-paste ke aplikasi</li>
+    <li>Belajar struktur JSON dari response yang kompleks</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">JSON saya invalid, kenapa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Common errors: comma di akhir array/object, quotes tidak escape, key tanpa quotes, gunakan single quotes (harus double). Error message menunjukkan posisi.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bedanya beautify vs minify?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Beautify menambah whitespace untuk readability. Minify menghapus semua whitespace tidak perlu untuk file size kecil - biasanya untuk production.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa convert JSON ke YAML/XML?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tidak, fokus tool ini JSON only. Untuk konversi format, butuh tool berbeda.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah datanya aman?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">100%. Semua proses di browser Anda. Tidak ada upload server.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </div></main>
 <footer><div class="footer-inner"><div class="footer-links"><a href="../gambar/index.html">Gambar</a><a href="../video/index.html">Video</a><a href="../pdf/index.html">PDF</a><a href="../lainnya/index.html">Lainnya</a></div><p>© 2025 ConvertHUB · Privasi terjaga · Semua proses di browser</p></div></footer>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>

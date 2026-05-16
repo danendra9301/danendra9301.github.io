@@ -108,6 +108,31 @@
       <a id="downloadBtn" class="btn btn-success" download="compressed.mp4">⬇️ Unduh Video</a>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Kompresi video mengurangi ukuran file dengan meng-encode ulang menggunakan bitrate dan codec yang lebih efisien. Cocok untuk video yang ingin di-upload ke WhatsApp, email, atau platform dengan batas ukuran. Tool ini pakai ffmpeg.wasm dengan codec H.264 yang kompatibel di semua perangkat.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload MP4, pilih tingkat kompresi (Low/Medium/High), tool akan re-encode dengan target bitrate optimal. Proses berjalan di browser - file tidak dikirim ke mana-mana.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Mengurangi ukuran video untuk dikirim via WhatsApp (max 100MB)</li>
+    <li>Hemat storage cloud (Google Drive, Dropbox)</li>
+    <li>Mempercepat upload ke media sosial</li>
+    <li>Mengurangi konsumsi data viewer saat streaming</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah kualitas turun banyak?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tergantung level kompresi. Medium: hampir tidak terlihat. High: terlihat di bagian gerak cepat. Selalu preview hasil sebelum simpan.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Berapa lama prosesnya?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tergantung durasi video dan power CPU. Video 1 menit di Medium butuh sekitar 1-2 menit di laptop modern.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa kompres video selain MP4?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Saat ini support MP4. Untuk MKV/MOV/AVI, konversi dulu ke MP4 atau gunakan tool desktop.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Maksimal ukuran video?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">200MB direkomendasikan untuk pengalaman lancar. Lebih besar mungkin lambat atau crash karena keterbatasan memori browser.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

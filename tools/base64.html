@@ -37,6 +37,31 @@
   <button class="btn btn-outline" id="swapBtn"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Tukar In/Out</button>
   <button class="btn btn-outline" id="clearBtn"><i class="fa-solid fa-trash" aria-hidden="true"></i> Bersihkan</button>
 </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Base64 adalah skema encoding yang mengubah data binary menjadi string ASCII (huruf, angka, plus dan slash). Sering dipakai untuk embed gambar di CSS (data URI), encode email attachment, atau passing data binary lewat protokol text-only seperti JSON/XML. Tool ini support UTF-8 byte-safe - bisa encode emoji, karakter Mandarin, Arab, dan lainnya tanpa rusak.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Pilih mode Encode (text ke Base64) atau Decode (Base64 ke text). Ketik di input, hasil real-time di output. Tombol Swap untuk tukar input/output dengan cepat (untuk round-trip testing).</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Encode gambar kecil jadi data URI untuk inline di HTML/CSS</li>
+    <li>Decode token JWT untuk inspect payload</li>
+    <li>Encode credential atau data binary untuk passing via URL</li>
+    <li>Belajar konsep encoding untuk security/development</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apa bedanya Base64 dengan enkripsi?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Base64 BUKAN enkripsi - hanya encoding. Siapapun bisa decode. Untuk security, butuh enkripsi seperti AES.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Kenapa Base64 lebih besar dari aslinya?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Setiap 3 byte original jadi 4 karakter Base64. Overhead sekitar 33%. Itu trade-off untuk membuat data binary aman dilewatkan via text channel.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa decode binary file (gambar, dll)?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tool ini fokus text. Untuk decode Base64 jadi file binary, butuh tool/script terpisah.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Aman pakai untuk password?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">TIDAK. Base64 mudah di-decode. Untuk password storage, pakai hashing (bcrypt, argon2).</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </div></main>
 <footer><div class="footer-inner"><div class="footer-links"><a href="../gambar/index.html">Gambar</a><a href="../video/index.html">Video</a><a href="../pdf/index.html">PDF</a><a href="../lainnya/index.html">Lainnya</a></div><p>© 2025 ConvertHUB · Privasi terjaga · Semua proses di browser</p></div></footer>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>

@@ -153,6 +153,31 @@
       <button class="btn btn-outline" id="copyBtn"><i class="fa-solid fa-copy" aria-hidden="true"></i> Salin ke Clipboard</button>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">QR Code (Quick Response Code) adalah barcode 2D yang bisa di-scan kamera smartphone untuk akses cepat ke URL, teks, kontak, WiFi, dan lainnya. Tool ini generate QR Code dengan kontrol penuh: versi modul (21x21 hingga 177x177), resolusi hingga 8K, error correction level, dan warna custom. Cocok untuk poster, kartu nama, atau campaign marketing.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Masukkan teks atau URL, pilih preset (URL Pendek, WiFi, Banner 8K, dll) atau atur manual versi modul dan resolusi. QR Code di-render real-time menggunakan library qrcode-generator. Download PNG atau salin ke clipboard.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Membuat QR Code untuk menu restoran (link ke menu digital)</li>
+    <li>QR Code kartu nama digital (vCard)</li>
+    <li>Sharing WiFi password tanpa ketik manual</li>
+    <li>Marketing poster yang ingin membawa orang ke website</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Error Correction Level (L/M/Q/H) itu apa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tingkat toleransi QR jika sebagian rusak. L (7%), M (15%), Q (25%), H (30%). Untuk QR yang akan dicetak besar atau di lingkungan kotor, pakai Q atau H.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Maksimal berapa karakter?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tergantung versi dan ECC. Versi 40 dengan ECC L bisa hingga sekitar 2900 karakter. Untuk URL pendek, versi 5-10 sudah cukup.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa ditambahin logo di tengah?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tool saat ini menghasilkan QR standar. Untuk QR dengan logo, butuh editor grafis tambahan.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Resolusi 8K untuk apa?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Untuk dicetak super besar (banner outdoor, billboard) tetap tajam. Untuk web, 512-1024px sudah cukup.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

@@ -143,6 +143,31 @@
       </div>
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">YouTube otomatis memilih codec video (H.264, VP9, atau AV1) berdasarkan resolusi upload. Video 1440p+ dapat VP9, video 4K+ dapat AV1 (codec lebih efisien). Tool ini membungkus video Anda di canvas yang lebih besar dengan black bars - TANPA upscale konten - sehingga YouTube melihat resolusi tinggi dan memberikan codec premium. Kualitas video asli tetap terjaga, hanya canvas-nya yang diperbesar.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload MP4 (rekomendasi 1080p), pilih mode VP9 (1440p target) atau AV1 (4K target). Tool akan menambah black padding mengelilingi video asli sehingga total dimensi mencapai target, lalu re-encode dengan kualitas CRF 18 (very high).</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Konten kreator YouTube yang ingin codec VP9/AV1 untuk kualitas lebih baik</li>
+    <li>Video gaming/screencast yang butuh codec efisien</li>
+    <li>Konten yang akan ditonton banyak orang (codec premium = bandwidth lebih hemat untuk viewer)</li>
+    <li>Upload archive video lama dengan codec terbaru</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Apakah trick ini aman dari Terms YouTube?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Ya, ini cuma penambahan padding visual (bukan manipulasi). Banyak kreator pro melakukannya.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Kualitas video saya akan turun?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tidak. Konten asli dipertahankan piksel-per-piksel. Hanya frame total yang lebih besar karena ada border hitam.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Berapa lama prosesnya?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Tergantung durasi video. 1 menit video 1080p butuh sekitar 2-4 menit di laptop modern.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">YouTube pasti kasih VP9/AV1?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">YouTube juga memilih codec berdasar popularitas. 1440p+ adalah SYARAT, tapi tidak menjamin. Video viral lebih cepat dapat AV1.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">

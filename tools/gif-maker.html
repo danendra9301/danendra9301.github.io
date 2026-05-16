@@ -119,6 +119,31 @@
       <img id="gifPreview" alt="Pratinjau GIF hasil" style="max-width:100%;border:1px solid var(--border);border-radius:8px">
     </div>
   </div>
+
+<section class="tool-content" style="margin:2.5rem 0 1.5rem;padding:1.5rem 0;border-top:1px solid var(--border);font-size:.95rem;line-height:1.7;color:var(--text)">
+  <h2 style="font-size:1.35rem;margin:0 0 .75rem;color:var(--text);font-weight:700">Tentang Tool Ini</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">GIF (Graphics Interchange Format) adalah format gambar bergerak yang masih populer untuk reaksi, meme, atau ilustrasi animasi pendek. Tool ini mengkonversi video MP4 menjadi GIF dengan kualitas optimal - menggunakan ffmpeg.wasm dengan palette generation untuk warna yang akurat dan ukuran file terkontrol.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Cara Kerja</h2>
+  <p style="color:var(--text-muted);margin-bottom:1rem">Upload MP4 (idealnya pendek, di bawah 10 detik), atur FPS (frame per second) dan lebar GIF, klik Buat GIF. Tool akan generate palette dan render GIF berkualitas tinggi.</p>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Kapan Memakai Tool Ini</h2>
+  <ul style="color:var(--text-muted);margin:0 0 1rem 1.25rem;padding:0">
+    <li>Membuat reaksi GIF untuk chat/Discord/Slack</li>
+    <li>Ilustrasi tutorial cara melakukan sesuatu</li>
+    <li>Meme dari clip video pendek</li>
+    <li>Animasi loop pendek untuk presentasi</li>
+  </ul>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Pertanyaan yang Sering Diajukan</h2>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Kenapa file GIF lebih besar dari MP4?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">GIF menyimpan setiap frame terpisah dengan kompresi terbatas. MP4 jauh lebih efisien. GIF cocok hanya untuk durasi 1-10 detik.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">FPS yang ideal?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">10-15 FPS untuk GIF web umum. 24+ FPS untuk animasi halus tapi file besar. 5-7 FPS untuk animasi cepat efisien.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Maksimal durasi?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Direkomendasikan di bawah 10 detik. Lebih panjang akan menghasilkan file 50MB+ yang lambat dimuat.</p></details>
+    <details style="margin:.5rem 0;border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;background:var(--surface)"><summary style="cursor:pointer;font-weight:600;color:var(--text)">Bisa edit/tambah teks di GIF?</summary><p style="margin:.65rem 0 0;color:var(--text-muted);font-size:.92rem">Saat ini fokus konversi. Untuk text overlay, gunakan tool editing GIF khusus.</p></details>
+
+  <h2 style="font-size:1.35rem;margin:1.5rem 0 .75rem;color:var(--text);font-weight:700">Privasi dan Keamanan</h2>
+  <p style="color:var(--text-muted)">ConvertHUB dibangun dengan prinsip <strong>privacy-first</strong>: semua proses berjalan 100% di browser Anda menggunakan teknologi modern seperti Canvas API, WebAssembly, dan Web Crypto. File yang Anda upload tidak pernah dikirim ke server kami atau pihak ketiga. Begitu Anda tutup tab, semua data hilang dari memori. Tidak ada akun, tidak ada tracking konten file, tidak ada database. Anda punya kontrol penuh atas data Anda - cocok untuk file sensitif seperti dokumen pribadi, password, atau konten yang belum dipublikasikan.</p>
+</section>
 </main>
 <footer>
   <div class="footer-inner">
